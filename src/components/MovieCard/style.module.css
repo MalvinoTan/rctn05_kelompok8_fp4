@@ -1,0 +1,54 @@
+.container {
+    display: inline-block;
+    position: relative;
+    margin: 1rem 0.75rem;
+    width: 200px;
+    height: 300px;
+    background-color: gray;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    transition: 0.5s ease;
+}
+
+.container:hover .overlay {
+    display: block;
+    background: rgba(0, 0, 0, .3);
+}
+
+.container>img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+}
+
+.button {
+    position: absolute;
+    width: 100%;
+    margin: 0 auto;
+    top: 230px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity .35s ease;
+}
+
+.button > span {
+    width: 200px;
+    padding: 10px 8px;
+    text-align: center;
+    background-color: none;
+    color: white;
+    border: solid 2px white;
+}
+
+.container:hover .button {
+    opacity: 1;
+    cursor: pointer;
+}

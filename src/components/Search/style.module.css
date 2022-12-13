@@ -1,0 +1,59 @@
+.container {
+    max-width: 600px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    display: flex;
+    top: 10px;
+    margin: 30px auto;
+    background-color: white;
+}
+
+.container>input {
+    width: 100%;
+    padding: 16px;
+    border: 0;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.container>input:focus {
+    outline: 0;
+}
+
+.container>input:focus::placeholder {
+    font-weight: bold;
+}
+
+.container>input::placeholder {
+    color: gray;
+    font-weight: normal;
+}
+
+.container>button {
+    width: 15%;
+    cursor: pointer;
+    margin-left: auto;
+    padding: 10px;
+    background-color: rgb(214, 8, 8);
+    ;
+    color: white;
+    border: 0;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 620px) {
+    .container {
+        flex-direction: column;
+        position: static;
+        width: 80%;
+    }
+
+    .container>input {
+        width: 100%;
+    }
+
+    .container>button {
+        width: 100%;
+    }
+}
